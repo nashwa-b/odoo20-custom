@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="view_purchase_order_wizard_form" model="ir.ui.view">
+       <field name="name">purchase.order.wizard.form</field>
+       <field name="model">purchase.order.wizard</field>
+       <field name="arch" type="xml">
+           <form string="Fetch Purchase Order">
+               <group>
+                   <field name="api_key" string="API Key"/>
+                   <field name="db_name" string="Database"/>
+                   <field name="url" string="URL"/>
+               </group>
+               <footer>
+                   <button name="action_fetch_purchase_orders" string="Fetch" class="oe_highlight" type="object"/>
+               <button name="action_close_wizard" string="Cancel" class="oe_highlight" type="object" special="cancel"/>
+               </footer>
+           </form>
+       </field>
+   </record>
+</odoo>
